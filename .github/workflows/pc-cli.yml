@@ -30,6 +30,7 @@ jobs:
       - name: Cache pip dependencies
         uses: actions/cache@v3
         with:
+          ref: 88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
